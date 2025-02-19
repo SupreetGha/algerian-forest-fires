@@ -7,18 +7,9 @@
 
 ## 📌 Project Overview
 
-This project consists of two Jupyter notebooks that analyze and predict forest fires in Algeria using machine learning techniques. The goal is to extract insights from the dataset and build a predictive model.
+In this project, we delve into the  dynamics of forest fires in Algeria, using a data-driven approach to both understand and predict these natural phenomena. The aim is to utilize the power of exploratory data analysis (EDA) and machine learning to extract valuable insights from historical data and to develop predictive models that can forecast forest fire occurrences based on meteorological conditions.
 
-- **Algerian_Forest_Fires_EDA.ipynb** - Exploratory Data Analysis (EDA) on the dataset.
-- **Algerian_Forest_Fire_Model.ipynb** - Machine Learning model for fire prediction.
-
-## 📊 Data & Analysis
-
-- Conducted **data cleaning** and **feature engineering**.
-- Visualized key patterns in the dataset related to temperature, humidity, wind, and fire occurrences.
-- Performed **correlation analysis** and feature selection.
-- Trained and evaluated a machine learning model for fire prediction.
-
+The dataset used in this project is sourced from UCI Machine Learning Repository, providing a rich set of variables including temperature, humidity, wind speed (Ws), rain, and other environmental factors recorded over specific periods. 
 ## 🚀 Technologies Used
 
 - Python 🐍
@@ -26,6 +17,20 @@ This project consists of two Jupyter notebooks that analyze and predict forest f
 - Matplotlib, Seaborn 📈
 - Scikit-learn 🤖
 - Jupyter Notebook 📓
+
+## 📊 Data & Analysis
+**Algerian_Forest_Fires_EDA.ipynb**
+-  Perform feature engineering to create new variable (Classes) to help with classification prediction
+-  Visualize data patterns using various plots to understand the relationship between meteorological conditions and fire events.
+-  Carry out correlation analysis to identify which features have the strongest association with fire outbreaks.
+-  Use these insights to guide our feature selection for the predictive model.
+
+**Algerian_Forest_Fire_Model.ipynb**
+- Selection of appropriate algorithms based on the EDA outcomes.
+- Model training with cross-validation to ensure robustness.
+- Hyperparameter tuning to enhance model performance.
+- Evaluation of the model using R2 Score and Mean Absolute Error
+
 
 ## 📂 Project Structure
 📜 Algerian_Forest_Fires_EDA.ipynb # Exploratory Data Analysis 
