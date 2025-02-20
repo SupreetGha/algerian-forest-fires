@@ -9,7 +9,7 @@
 
 In this project, we delve into the dynamics of forest fires in Algeria, using a data-driven approach to both understand and predict these fires. The aim is to utilize exploratory data analysis (EDA) and machine learning to extract valuable insights from historical data and to develop predictive models that can forecast forest fire occurrences based on given meteorological features.
 
-The dataset used in this project is sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Algerian+Forest+Fires+Dataset++), providing a rich set of variables including temperature, humidity, wind speed (Ws), rain, and other environmental factors recorded over specific periods in 2012 across two regions: Bejaia and Sidi-Bel Abbes.
+The dataset used in this project is sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/547/algerian+forest+fires+dataset), providing a rich set of variables including temperature, humidity, wind speed (Ws), rain, and other environmental factors recorded over specific periods in 2012 across two regions: Bejaia and Sidi-Bel Abbes.
 
 ## 🚀 Technologies Used
 
