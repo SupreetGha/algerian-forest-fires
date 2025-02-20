@@ -238,7 +238,5 @@ xgb_cm = ConfusionMatrixDisplay.from_estimator(xgb, X_test_scaled, y_test)
 ## 📢 Results & Insights
 - Analyzed Distibutions of all features via Histogramns
 - Identified top features when modeling forest fires predictions
-- 
 - Developed a Decision Tree Regressor Model achieving a R2 Score of .9785 and an MAE Score of .6151 
 - Developed a XGB Boost Classification Model achieving a R2 Score of 0.9726 and a weighted avg f1 score of .96
-- 
