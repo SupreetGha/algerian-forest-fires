@@ -7,9 +7,10 @@
 
 ## 📌 Project Overview
 
-In this project, we delve into the  dynamics of forest fires in Algeria, using a data-driven approach to both understand and predict these natural phenomena. The aim is to utilize the power of exploratory data analysis (EDA) and machine learning to extract valuable insights from historical data and to develop predictive models that can forecast forest fire occurrences based on meteorological conditions.
+In this project, we delve into the dynamics of forest fires in Algeria, using a data-driven approach to both understand and predict these fires. The aim is to utilize exploratory data analysis (EDA) and machine learning to extract valuable insights from historical data and to develop predictive models that can forecast forest fire occurrences based on given meteorological features.
 
-The dataset used in this project is sourced from UCI Machine Learning Repository, providing a rich set of variables including temperature, humidity, wind speed (Ws), rain, and other environmental factors recorded over specific periods. 
+The dataset used in this project is sourced from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Algerian+Forest+Fires+Dataset++), providing a rich set of variables including temperature, humidity, wind speed (Ws), rain, and other environmental factors recorded over specific periods in 2012 across two regions: Bejaia and Sidi-Bel Abbes.
+
 ## 🚀 Technologies Used
 
 - Python 🐍
@@ -19,11 +20,13 @@ The dataset used in this project is sourced from UCI Machine Learning Repository
 - Jupyter Notebook 📓
 
 ## 📊 Data Analysis & Modeling
-**Algerian_Forest_Fires_EDA.ipynb**
--  Perform feature engineering to create new variable (Classes) to help with classification prediction
--  Visualize data patterns using various plots to understand the relationship between meteorological conditions and fire events.
--  Carry out correlation analysis to identify which features have the strongest association with fire outbreaks.
--  Use these insights to guide our feature selection for the predictive model.
+**Algerian_Forest_Fires_EDA.ipynb**.
+- Performed feature engineering to create a binary `Classes` variable (0 for "not fire", 1 for "fire") to aid in classification prediction.  
+- Visualized data patterns using histograms, boxplots, bar charts, and count plots to understand the relationship between meteorological conditions and fire events.  
+- Carried out correlation analysis to identify features with the strongest association with fire outbreaks, visualized through a heatmap.  
+- Stored and retrieved the dataset using MongoDB for efficient data management.  
+- Conducted region-specific analysis by splitting the dataset into Bejaia and Sidi-Bel Abbes regions to uncover regional fire patterns.  
+- Created monthly fire occurrence visualizations to identify seasonal trends in fire activity.
 
 <table>
   <thead>
@@ -236,7 +239,13 @@ xgb_cm = ConfusionMatrixDisplay.from_estimator(xgb, X_test_scaled, y_test)
 
 
 ## 📢 Results & Insights
-- Analyzed Distibutions of all features via Histogramns
-- Identified top features when modeling forest fires predictions
-- Developed a Decision Tree Regressor Model achieving a R2 Score of .9785 and an MAE Score of .6151 
-- Developed a XGB Boost Classification Model achieving a R2 Score of 0.9726 and a weighted avg f1 score of .96
+- Analyzed distributions of all features via histograms to understand their spread and skewness.
+- Identified top features influencing forest fire predictions through correlation and feature importance analysis.
+- Developed a Random Forest Regressor model achieving an R² Score of 0.9785 and an MAE of 0.6151.
+- Developed an XGBoost Classification model achieving an R² Score of 0.9726 and a weighted average F1-score of 0.97.
+- Additional Accomplishments:
+  - Exported and managed the dataset in MongoDB, demonstrating proficiency in database integration with Python.
+  - Performed outlier detection using boxplots for features like FWI
+  - Visualized fire counts by environmental factors (e.g., Rain, Temperature, Wind Speed, Relative Humidity) using custom bar chart functions.
+  - Analyzed class distribution, revealing that 56.38% of instances were fires and 43.62% were non-fires, providing context for model performance.
+  - Created region-specific monthly fire analyses, highlighting differences in fire patterns between Bejaia and Sidi-Bel Abbes.
